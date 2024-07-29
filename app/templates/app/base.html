@@ -62,9 +62,9 @@
             <li class="nav-item dropdown mx-2">
                 <a href="#" class="nav-link dropdown-toggle text-white" id='profileDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Vishal</a>
                 <ul class="dropdown-menu" aria-labelledby='profileDropdown'>
-                    <li><a href="#" class="dropdown-item">Profile</a></li>
+                    <li><a href="{% url 'profile' %}" class="dropdown-item">Profile</a></li>
                     <li><a href="#" class="dropdown-item">Orders</a></li>
-                    <li><a href="#" class="dropdown-item">Change Password</a></li>
+                    <li><a href="{% url 'passwordchange' %}" class="dropdown-item">Change Password</a></li>
                     <li><a href="#" class="dropdown-item">Logout</a></li>
                 </ul>
             </li>
