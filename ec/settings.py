@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*bob1cmr10)5+b%6%64w7mm7^q+8+*3-u$_314*ore&l3-#^d5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -125,3 +125,5 @@ LOGIN_REDIRECT_URL = '/profile/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
